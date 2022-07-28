@@ -1,5 +1,9 @@
 <?php
 require "config.php";
-$hi="hello";
-echo $hi;
+$query=$sql = "SELECT `username`, `password` FROM `loginpage` WHERE 1";
+$result=mysqli_query($conn,$query);
+while ($row=mysqli_fetch_array($result))
+{
+echo "<tr><td>".$row[0]."</td><td>".$row[1]."</td><td>";
+}
 ?>
