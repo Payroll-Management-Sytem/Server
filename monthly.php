@@ -13,7 +13,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                 $string = "&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
                 &nbsp; &nbsp; &nbsp;<span style=\"font-weight: 700;\">Salary Details for the month of January 20XY</span>
                 <br>Employee ID:  ".$row1[0]."</span><br>Employee Name :  ".$row1[1]."<br>Designation :  ".$row1[2]."<br>Office :  ".$row1[3]."<br>Scale of Pay : <br><strong>Earnings</strong><br> Basic
-                Pay : ₹".$row[4]."<br>DA : ₹".(float)$row[5]*(float)$row[4]."<br>HRA : ₹".(float)$row[6]*(float)$row[4]."<br>CCA : ₹".(float)$row[7]*(float)$row[4]."<br><strong>Deductions</strong><br>Insurance,LIC : ₹".(float)$row[8]*(float)$row[4]."<br>SLI : ₹".(float)$row[9]*(float)$row[4]."<br>GPF : ₹".(float)$row[10]*(float)$row[4]."<br>";
+                Pay : ₹".$row[4]."<br>DA : ₹".(float)$row[5]*(float)$row[4]*0.01."<br>HRA : ₹".(float)$row[6]*(float)$row[4]*0.01."<br>CCA : ₹".(float)$row[7]*(float)$row[4]*0.01."<br><strong>Deductions</strong><br>Insurance,LIC : ₹".(float)$row[8]*(float)$row[4]*0.01."<br>SLI : ₹".(float)$row[9]*(float)$row[4]*0.01."<br>GPF : ₹".(float)$row[10]*(float)$row[4]*0.01."<br>";
                 echo $string;
             }while($row=mysqli_fetch_array($result));
         }else{
