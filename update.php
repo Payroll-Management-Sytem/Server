@@ -1,5 +1,5 @@
 <?php
-if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+if ($_SERVER['REQUEST_METHOD'] === 'GET') {
     $name = $_POST['fname'];
     $pass = $_POST['pass'];
     // $name="hi";
