@@ -2,13 +2,10 @@
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     require 'config.php';
 
-        // echo $_POST['username']."<br>";
-        // foreach($_POST as $value){
-        //     echo $value."<br>";
-        // }
+        
         $query = "INSERT INTO `loginpage`(`uid`,`username`, `password`) VALUES (\"".$_POST['uid']."\",\"".$_POST['username']. "\",\"" . $_POST['pass'] . "\")";
     if ($conn->query($query) === TRUE) { 
-        $query1 = "INSERT INTO `employeedetails`(`uid`,`username`, `empid`,`empname`,`dob`,`gender`,`dateofjoining`,`designation`,`office`) VALUES (\"".$_POST['uid']."\",\"".$_POST['username']. "\",\"" . $_POST['empid'] . "\",\"".$_POST['empname']. "\",\"".$_POST['age']. "\",\"".$_POST['dob']. "\",\"".$_POST['gender']. "\",\"".$_POST['doj']. "\",\"".$_POST['desig']. "\",\"".$_POST['ofc']. "\")";
+        $query1 = "INSERT INTO `employeedetails`(`uid`,`username`, `empid`,`empname`,`age`,`dob`,`gender`,`dateofjoining`,`designation`,`office`) VALUES (\"".$_POST['uid']."\",\"".$_POST['username']. "\",\"" . $_POST['empid'] . "\",\"".$_POST['empname']. "\",\"".$_POST['age']. "\",\"".$_POST['dob']. "\",\"".$_POST['gender']. "\",\"".$_POST['doj']. "\",\"".$_POST['desig']. "\",\"".$_POST['ofc']. "\")";
         if ($conn->query($query1) === TRUE) {
             echo "success";
         } else {
