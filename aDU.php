@@ -1,6 +1,5 @@
 <?php
-require 'config.php';
-    $_POST['uid']="534681";
+require 'config.php';                         
     // $sql = "SELECT `uid`, `username`, `empid`, `empname`, `age`, `dob`, `gender`, `dateofjoining`, `designation`, `office` FROM `employeedetails` where uid=\"534681\"";
     $sql = "SELECT `uid`, `username`, `empid`, `empname`, `age`, `dob`, `gender`, `dateofjoining`, `designation`, `office` FROM `employeedetails` where uid=\"".$_POST['uid']."\"";
     $string="";
