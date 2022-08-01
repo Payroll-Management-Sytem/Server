@@ -17,14 +17,14 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             <div class=\"row\"><div class=\"col-2\"></div><div class=\"col-3\">Designation </div><div class=\"col-2 i\"> : </div><div class=\"col-1\"></div><div class=\"col-4\">".$row1[2]."</div></div>
             <div class=\"row\"><div class=\"col-2\"></div><div class=\"col-3\">Office </div><div class=\"col-2 i\"> : </div><div class=\"col-1\"></div><div class=\"col-4\">".$row1[3]."</div></div>
             <div class=\"row\"><div class=\"col-2\"></div><div class=\"col-3\"></div><div class=\"col-2 i\"><h3><strong>Earnings</strong></h3></div><div class=\"col-4\"></div></div>
-            <div class=\"row\"><div class=\"col-2\"></div><div class=\"col-3\">Basic Pay </div><div class=\"col-2 i\"> : </div><div class=\"col-1\"></div><div class=\"col-4\">₹".$row[4]."</div></div>
-            <div class=\"row\"><div class=\"col-2\"></div><div class=\"col-3\">Dearness Allowance </div><div class=\"col-2 i\"> : </div><div class=\"col-1\"></div><div class=\"col-4\">₹".(float)$row[5]*(float)$row[4]*0.01."</div></div>
-            <div class=\"row\"><div class=\"col-2\"></div><div class=\"col-3\">House Rent Allowance </div><div class=\"col-2 i\"> : </div><div class=\"col-1\"></div><div class=\"col-4\">₹".(float)$row[6]*(float)$row[4]*0.01."</div></div>
-            <div class=\"row\"><div class=\"col-2\"></div><div class=\"col-3\">CCA </div><div class=\"col-2 i\"> : </div><div class=\"col-1\"></div><div class=\"col-4\">₹".(float)$row[7]*(float)$row[4]*0.01."</div></div>            
+            <div class=\"row\"><div class=\"col-2\"></div><div class=\"col-3\">Basic Pay </div><div class=\"col-2 i\"> : </div><div class=\"col-1\"></div><div class=\"col-4\">₹ ".$row[4]."</div></div>
+            <div class=\"row\"><div class=\"col-2\"></div><div class=\"col-3\">Dearness Allowance </div><div class=\"col-2 i\"> : </div><div class=\"col-1\"></div><div class=\"col-4\">₹ ".(float)$row[5]*(float)$row[4]*0.01."</div></div>
+            <div class=\"row\"><div class=\"col-2\"></div><div class=\"col-3\">House Rent Allowance </div><div class=\"col-2 i\"> : </div><div class=\"col-1\"></div><div class=\"col-4\">₹ ".(float)$row[6]*(float)$row[4]*0.01."</div></div>
+            <div class=\"row\"><div class=\"col-2\"></div><div class=\"col-3\">CCA </div><div class=\"col-2 i\"> : </div><div class=\"col-1\"></div><div class=\"col-4\">₹ ".(float)$row[7]*(float)$row[4]*0.01."</div></div>            
             <div class=\"row\"><div class=\"col-2\"></div><div class=\"col-3\"></div><div class=\"col-2 i\"><h3><strong>Deductions</strong></h3></div><div class=\"col-4\"></div></div>
-            <div class=\"row\"><div class=\"col-2\"></div><div class=\"col-3\">LIC </div><div class=\"col-2 i\"> : </div><div class=\"col-1\"></div><div class=\"col-4\">₹".(float)$row[8]*(float)$row[4]*0.01."</div></div>
-            <div class=\"row\"><div class=\"col-2\"></div><div class=\"col-3\">SLI </div><div class=\"col-2 i\"> : </div><div class=\"col-1\"></div><div class=\"col-4\">₹".(float)$row[9]*(float)$row[4]*0.01."</div></div>
-            <div class=\"row\"><div class=\"col-2\"></div><div class=\"col-3\">GPF </div><div class=\"col-2 i\"> : </div><div class=\"col-1\"></div><div class=\"col-4\">₹".(float)$row[10]*(float)$row[4]*0.01."</div></div>";
+            <div class=\"row\"><div class=\"col-2\"></div><div class=\"col-3\">LIC </div><div class=\"col-2 i\"> : </div><div class=\"col-1\"></div><div class=\"col-4\">₹ ".(float)$row[8]*(float)$row[4]*0.01."</div></div>
+            <div class=\"row\"><div class=\"col-2\"></div><div class=\"col-3\">SLI </div><div class=\"col-2 i\"> : </div><div class=\"col-1\"></div><div class=\"col-4\">₹ ".(float)$row[9]*(float)$row[4]*0.01."</div></div>
+            <div class=\"row\"><div class=\"col-2\"></div><div class=\"col-3\">GPF </div><div class=\"col-2 i\"> : </div><div class=\"col-1\"></div><div class=\"col-4\">₹ ".(float)$row[10]*(float)$row[4]*0.01."</div></div>";
                 // $string = "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                 // &nbsp;&nbsp;&nbsp;<span style=\"font-weight: 700;\">Salary Details for the month ".$row[11]." ".$row[12]."</span>
                 // <br>
@@ -33,14 +33,14 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                 // Designation &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: ".$row1[2]."<br>
                 // Office &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:  ".$row1[3]."<br>
                 // <strong>Earnings</strong><br>
-                // Basic Pay &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: ₹".$row[4]."<br>
-                // DA &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: ₹".(float)$row[5]*(float)$row[4]*0.01."<br>
-                // HRA &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: ₹".(float)$row[6]*(float)$row[4]*0.01."<br>
-                // CCA &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: ₹".(float)$row[7]*(float)$row[4]*0.01."<br>
+                // Basic Pay &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: ₹ ".$row[4]."<br>
+                // DA &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: ₹ ".(float)$row[5]*(float)$row[4]*0.01."<br>
+                // HRA &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: ₹ ".(float)$row[6]*(float)$row[4]*0.01."<br>
+                // CCA &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: ₹ ".(float)$row[7]*(float)$row[4]*0.01."<br>
                 // <strong>Deductions</strong><br>
-                // LIC &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: ₹".(float)$row[8]*(float)$row[4]*0.01."<br>
-                // SLI &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: ₹".(float)$row[9]*(float)$row[4]*0.01."<br>
-                // GPF &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: ₹".(float)$row[10]*(float)$row[4]*0.01."<br>";
+                // LIC &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: ₹ ".(float)$row[8]*(float)$row[4]*0.01."<br>
+                // SLI &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: ₹ ".(float)$row[9]*(float)$row[4]*0.01."<br>
+                // GPF &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: ₹ ".(float)$row[10]*(float)$row[4]*0.01."<br>";
                 echo $string;
             }while($row=mysqli_fetch_array($result));
         }else{
