@@ -1,6 +1,6 @@
 <?php
-// header('Access-Control-Allow-Origin: https://payroll-management-sytem.github.io');
-header('Access-Control-Allow-Origin: https://dinero-dbms.herokuapp.com');
+header('Access-Control-Allow-Origin: *');
+// header('Access-Control-Allow-Origin: https://dinero-dbms.herokuapp.com');
 $serverName = "sql3.freemysqlhosting.net";
 $username = "sql3509293";
 $password = "FqLP8e3wKL";
