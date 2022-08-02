@@ -2,7 +2,7 @@
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     require 'config.php';
     $sql = "SELECT `empid`,`empname`,`designation`,`office` from `employeedetails` where uid=\"".$_POST['uid']."\"";
-    $sql2 = "SELECT *,monthname(paydate),year(paydate) from `salarydetails` where uid=\"".$_POST['uid']."\" and month(paydate)=".(int)$_POST['date'];
+    $sql2 = "SELECT *,monthname(paydate),year(paydate) from `salarydetails` where uid=\"".$_POST['uid']."\" and month(paydate)=".(int)$_POST['date']." order by paydate";
     $result1=mysqli_query($conn,$sql);
     $row1=mysqli_fetch_array($result1);
     

@@ -1,7 +1,7 @@
 <?php
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     require 'config.php';
-    $sql ="Select *,monthname(paydate),year(paydate) from salarydetails where uid=\"".$_POST['uid']."\"";
+    $sql ="Select *,monthname(paydate),year(paydate) from salarydetails where uid=\"".$_POST['uid']."\" order by paydate";
     $result=mysqli_query($conn,$sql);
     $string="";
     if ($row=mysqli_fetch_array($result)){

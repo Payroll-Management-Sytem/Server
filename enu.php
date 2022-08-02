@@ -1,7 +1,7 @@
 <?php
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     require 'config.php';
-    $sql = "SELECT `uid`, `empname` FROM `employeedetails`";
+    $sql = "SELECT `uid`, `empname` FROM `employeedetails` order by empname";
     $string="";
     $result=mysqli_query($conn,$sql);
     if ($row=mysqli_fetch_array($result)){

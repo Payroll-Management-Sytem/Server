@@ -1,7 +1,7 @@
 <?php
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     require 'config.php';
-    $sql ="Select * from employeedetails";
+    $sql ="Select * from employeedetails order by dateofjoining";
     $result=mysqli_query($conn,$sql);
     $string="";
     $num=0;
